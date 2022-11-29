@@ -53,9 +53,9 @@ public class AudioSyncer : MonoBehaviour {
         OnUpdate();
     }
 
-    public float bias;
-    public float timeStep;
-    public float timeToBeat;
+    public float bias = 80f;
+    public float timeStep = .05f;
+    public float timeToBeat = .05f;
     public float restSmoothTime;
 
     private float m_previousAudioValue;

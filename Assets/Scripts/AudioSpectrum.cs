@@ -29,6 +29,6 @@ public class AudioSpectrum : MonoBehaviour
         //     spectrumValue = m_audioSpectrum[0] * 100;
         // }
 
-        Debug.Log(spectrumValue);
+        // Debug.Log(spectrumValue);
     }
 }
