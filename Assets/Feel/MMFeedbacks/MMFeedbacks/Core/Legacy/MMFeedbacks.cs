@@ -181,6 +181,7 @@ namespace MoreMountains.Feedbacks
 		protected float _startTime = 0f;
 		protected float _holdingMax = 0f;
 		protected float _lastStartAt = -float.MaxValue;
+		protected int _lastStartFrame = -1;
 		protected bool _pauseFound = false;
 		protected float _totalDuration = 0f;
 		protected bool _shouldStop = false;

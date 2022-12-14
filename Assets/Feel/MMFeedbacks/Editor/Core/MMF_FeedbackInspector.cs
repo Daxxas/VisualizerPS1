@@ -398,7 +398,11 @@ namespace MoreMountains.Feedbacks
 							string propertyPath = currentProperty.propertyPath;
 							string conditionPath = propertyPath.Replace(currentProperty.name, _conditionAttribute.ConditionBoolean);
 							SerializedProperty sourcePropertyValue = currentProperty.serializedObject.FindProperty(conditionPath);
-							if (!sourcePropertyValue.boolValue)
+							if (!_conditionAttribute.Negative && !sourcePropertyValue.boolValue) 
+							{
+								return true;
+							}
+							if (_conditionAttribute.Negative && sourcePropertyValue.boolValue)
 							{
 								return true;
 							}

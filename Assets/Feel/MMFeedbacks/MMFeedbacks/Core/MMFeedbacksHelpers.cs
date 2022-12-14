@@ -156,17 +156,27 @@ namespace MoreMountains.Feedbacks
 	{
 		public string ConditionBoolean = "";
 		public bool Hidden = false;
+		public bool Negative = false;
 
 		public MMFConditionAttribute(string conditionBoolean)
 		{
 			this.ConditionBoolean = conditionBoolean;
 			this.Hidden = false;
+			this.Negative = false;
 		}
 
 		public MMFConditionAttribute(string conditionBoolean, bool hideInInspector)
 		{
 			this.ConditionBoolean = conditionBoolean;
 			this.Hidden = hideInInspector;
+			this.Negative = false;
+		}
+
+		public MMFConditionAttribute(string conditionBoolean, bool hideInInspector, bool negative)
+		{
+			this.ConditionBoolean = conditionBoolean;
+			this.Hidden = hideInInspector;
+			this.Negative = negative;
 		}
 	}
 

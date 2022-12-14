@@ -5,19 +5,10 @@ using UnityEngine;
 
 public class AudioSpectrum : MonoBehaviour
 {
-    private float[] m_audioSpectrum;
-
-     public static float spectrumValue;
-     public float SetSpectrumValue { get => spectrumValue; set => spectrumValue = value; }
-
-    public static float SpectrumValue {get => spectrumValue; }
-
+    public float spectrumValue;
+     public float SpectrumValue { get => spectrumValue; set => spectrumValue = value; }
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        m_audioSpectrum = new float[128];
-    }
+    
 
     // Update is called once per frame
     void Update()

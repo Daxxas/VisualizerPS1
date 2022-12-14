@@ -72,7 +72,7 @@ namespace MoreMountains.Feedbacks
 			{
 				Initialization();
 			}
-			
+
 			InitializeFeedbackList();
 			ExtraInitializationChecks();
 			CheckForLoops();
@@ -126,14 +126,33 @@ namespace MoreMountains.Feedbacks
 			{
 				MMSetFeedbackRangeCenterEvent.Register(OnMMSetFeedbackRangeCenterEvent);	
 			}
-			if (AutoPlayOnEnable && Application.isPlaying)
-			{
-				PlayFeedbacks();
-			}
 			foreach (MMF_Feedback feedback in FeedbacksList)
 			{
 				feedback.CacheRequiresSetup();
 			}
+			if (AutoPlayOnEnable && Application.isPlaying)
+			{
+				// if we're in the very first frames, we delay our play for 2 frames to avoid Unity bugs
+				if (Time.frameCount < 2)
+				{
+					StartCoroutine(PlayFeedbacksAfterFrames(2));
+				}
+				else
+				{
+					PlayFeedbacks();
+				}
+			}
+		}
+
+		/// <summary>
+		/// A coroutine you can start to play this player's feedbacks after X frames
+		/// </summary>
+		/// <param name="framesAmount"></param>
+		/// <returns></returns>
+		public virtual IEnumerator PlayFeedbacksAfterFrames(int framesAmount)
+		{
+			yield return MMFeedbacksCoroutine.WaitForFrames(framesAmount);
+			PlayFeedbacks();
 		}
 
 		/// <summary>
@@ -294,10 +313,11 @@ namespace MoreMountains.Feedbacks
 			}
             
 			ResetFeedbacks();
-			this.enabled = true;
-			IsPlaying = true;
+			_lastStartFrame = Time.frameCount;
 			_startTime = GetTime();
 			_lastStartAt = _startTime;
+			this.enabled = true;
+			IsPlaying = true;
 			ComputeNewRandomDurationMultipliers();
 			_totalDuration = TotalDuration;
 			CheckForPauses();
@@ -328,6 +348,11 @@ namespace MoreMountains.Feedbacks
 		{
 			// if CanPlay is false, we're not allowed to play
 			if (!CanPlay)
+			{
+				return false;
+			}
+
+			if (Time.frameCount == _lastStartFrame)
 			{
 				return false;
 			}
@@ -396,7 +421,6 @@ namespace MoreMountains.Feedbacks
 		protected override void PreparePlay(Vector3 position, float feedbacksIntensity, bool forceRevert = false)
 		{
 			Events.TriggerOnPlay(this);
-
 			_holdingMax = 0f;
 			CheckForPauses();
 			

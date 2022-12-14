@@ -187,18 +187,19 @@ namespace MoreMountains.Feedbacks
 			}
 			else
 			{
-				_workInitialPosition = RelativePosition ? GetPosition(AnimatePositionTarget.transform) + InitialPosition : GetPosition(AnimatePositionTarget.transform);
+				_workInitialPosition = RelativePosition ? GetPosition(AnimatePositionTarget.transform) + InitialPosition : InitialPosition;
+				if (Space == Spaces.Self && !RelativePosition)
+				{
+					_workInitialPosition = AnimatePositionTarget.transform.position + InitialPosition;
+				}
 			}
-			if (Mode != Modes.ToDestination)
+			if (DestinationPositionTransform != null)
 			{
-				if (DestinationPositionTransform != null)
-				{
-					_workDestinationPosition = GetPosition(DestinationPositionTransform);
-				}
-				else
-				{
-					_workDestinationPosition = RelativePosition ? GetPosition(AnimatePositionTarget.transform) + DestinationPosition : DestinationPosition;
-				}
+				_workDestinationPosition = GetPosition(DestinationPositionTransform);
+			}
+			else
+			{
+				_workDestinationPosition = RelativePosition ? GetPosition(AnimatePositionTarget.transform) + DestinationPosition : DestinationPosition;
 			}
 		}
 

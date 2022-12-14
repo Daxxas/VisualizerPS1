@@ -4,8 +4,11 @@
 /// Parent class responsible for extracting beats from..
 /// ..spectrum value given by AudioSpectrum.cs
 /// </summary>
-public class AudioSyncer : MonoBehaviour {
+public class AudioSyncer : MonoBehaviour
+{
 
+    [SerializeField] private AudioSpectrum audioSpectrum;
+    
     /// <summary>
     /// Inherit this to cause some behavior on each beat
     /// </summary>
@@ -25,7 +28,7 @@ public class AudioSyncer : MonoBehaviour {
     { 
         // update audio value
         m_previousAudioValue = m_audioValue;
-        m_audioValue = AudioSpectrum.SpectrumValue;
+        m_audioValue = audioSpectrum.SpectrumValue;
 
         // if audio value went below the bias during this frame
         if (m_previousAudioValue > bias &&

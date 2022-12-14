@@ -175,7 +175,8 @@ namespace MoreMountains.Feedbacks
 		/// Draw a header similar to the one used for the post-process stack
 		/// </summary>
 		static public Rect DrawHeader(ref bool expanded, ref bool activeField, string title, Color feedbackColor, System.Action<GenericMenu> fillGenericMenu, 
-			float startedAt, float duration, float totalDuration, MMFeedbackTiming timing, bool pause, bool requiresSetup, string requiredTarget, Color displayColor, MMF_Player host)
+			float startedAt, float duration, float totalDuration, MMFeedbackTiming timing, bool pause, bool requiresSetup, string requiredTarget, Color displayColor, 
+			bool displayFullHeaderColor, MMF_Player host)
 		{
 			float thisTime = timing.TimescaleMode == TimescaleModes.Scaled ? Time.time : Time.unscaledTime;
 			float thisDeltaTime = timing.TimescaleMode == TimescaleModes.Scaled ? Time.deltaTime : Time.unscaledDeltaTime;
@@ -236,7 +237,7 @@ namespace MoreMountains.Feedbacks
 
 			_headerBackgroundColor = Color.white;
 			// Background - if color is white we draw the default color
-			if (!pause)
+			if (!displayFullHeaderColor)
 			{
 				_headerBackgroundColor = HeaderBackground;
 			}

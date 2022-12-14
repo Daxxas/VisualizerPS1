@@ -163,6 +163,9 @@ namespace MoreMountains.Feedbacks
 		[Tooltip("Sets how much this AudioSource is affected by 3D spatialisation calculations (attenuation, doppler etc). 0.0 makes the sound full 2D, 1.0 makes it full 3D.")]
 		[Range(0f,1f)]
 		public float SpatialBlend;
+		/// a Transform this sound can 'attach' to and follow it along as it plays
+		[Tooltip("a Transform this sound can 'attach' to and follow it along as it plays")]
+		public Transform AttachToTransform;
         
 		[MMFInspectorGroup("Effects", true, 36)]
 		/// Bypass effects (Applied from filter components or global listener filters).
@@ -201,6 +204,34 @@ namespace MoreMountains.Feedbacks
 		/// (Logarithmic rolloff) MaxDistance is the distance a sound stops attenuating at.
 		[Tooltip("(Logarithmic rolloff) MaxDistance is the distance a sound stops attenuating at.")]
 		public float MaxDistance = 500f;
+		/// whether or not to use a custom curve for custom volume rolloff
+		[Tooltip("whether or not to use a custom curve for custom volume rolloff")]
+		public bool UseCustomRolloffCurve = false;
+		/// the curve to use for custom volume rolloff if UseCustomRolloffCurve is true
+		[Tooltip("the curve to use for custom volume rolloff if UseCustomRolloffCurve is true")]
+		[MMFCondition("UseCustomRolloffCurve", true)]
+		public AnimationCurve CustomRolloffCurve;
+		/// whether or not to use a custom curve for spatial blend
+		[Tooltip("whether or not to use a custom curve for spatial blend")]
+		public bool UseSpatialBlendCurve = false;
+		/// the curve to use for custom spatial blend if UseSpatialBlendCurve is true
+		[Tooltip("the curve to use for custom spatial blend if UseSpatialBlendCurve is true")]
+		[MMFCondition("UseSpatialBlendCurve", true)]
+		public AnimationCurve SpatialBlendCurve;
+		/// whether or not to use a custom curve for reverb zone mix
+		[Tooltip("whether or not to use a custom curve for reverb zone mix")]
+		public bool UseReverbZoneMixCurve = false;
+		/// the curve to use for custom reverb zone mix if UseReverbZoneMixCurve is true
+		[Tooltip("the curve to use for custom reverb zone mix if UseReverbZoneMixCurve is true")]
+		[MMFCondition("UseReverbZoneMixCurve", true)]
+		public AnimationCurve ReverbZoneMixCurve;
+		/// whether or not to use a custom curve for spread
+		[Tooltip("whether or not to use a custom curve for spread")]
+		public bool UseSpreadCurve = false;
+		/// the curve to use for custom spread if UseSpreadCurve is true
+		[Tooltip("the curve to use for custom spread if UseSpreadCurve is true")]
+		[MMFCondition("UseSpreadCurve", true)]
+		public AnimationCurve SpreadCurve;
         
 		[MMFInspectorGroup("Debug", true, 31)]
 		/// whether or not to draw sound falloff gizmos when this MMF Player is selected
@@ -355,6 +386,17 @@ namespace MoreMountains.Feedbacks
 			_options.RolloffMode = RolloffMode;
 			_options.MinDistance = MinDistance;
 			_options.MaxDistance = MaxDistance;
+			_options.AttachToTransform = AttachToTransform;
+			
+			
+			_options.UseSpreadCurve = UseSpreadCurve;
+			_options.SpreadCurve = SpreadCurve;
+			_options.UseCustomRolloffCurve = UseCustomRolloffCurve;
+			_options.CustomRolloffCurve = CustomRolloffCurve;
+			_options.UseSpatialBlendCurve = UseSpatialBlendCurve;
+			_options.SpatialBlendCurve = SpatialBlendCurve;
+			_options.UseReverbZoneMixCurve = UseReverbZoneMixCurve;
+			_options.ReverbZoneMixCurve = ReverbZoneMixCurve;
 
 			_playedAudioSource = MMSoundManagerSoundPlayEvent.Trigger(sfx, _options);
 

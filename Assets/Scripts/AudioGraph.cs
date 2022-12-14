@@ -7,6 +7,7 @@ public class AudioGraph : MonoBehaviour
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private float xStep = 0.01f;
     [SerializeField] private Vector2 nextPointPosition;
+    [SerializeField] private AudioSpectrum audioSpectrum;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class AudioGraph : MonoBehaviour
     private void Update()
     {
         nextPointPosition.x += xStep;
-        nextPointPosition.y = AudioSpectrum.SpectrumValue;
+        nextPointPosition.y = audioSpectrum.SpectrumValue;
         AddPointToGraph(nextPointPosition);
     }
 

@@ -328,7 +328,6 @@ namespace MoreMountains.Feedbacks
 		/// This flag will be used to display a warning icon in the inspector if the feedback is not ready to be played.
 		/// </summary>
 		public bool RequiresSetup => _requiresSetup;
-
 		public string RequiredTarget => _requiredTarget;
 
 		public virtual void CacheRequiresSetup()
@@ -336,10 +335,13 @@ namespace MoreMountains.Feedbacks
 			_requiresSetup = EvaluateRequiresSetup();
 			_requiredTarget = RequiredTargetText == "" ? "" : "[" + RequiredTargetText + "]";
 		}
-
+		/// if this is true, group inspectors will be displayed within this feedback
 		public virtual bool DrawGroupInspectors => true;
-
+		/// if this is true, the feedback will be displayed in the MMF Player's list with a full color background, as opposed to just a small line on the left
+		public virtual bool DisplayFullHeaderColor => false;
+		/// defines the setup text that will be displayed on the feedback, should setup be required
 		public virtual string RequiresSetupText => "This feedback requires some additional setup.";
+		/// the text used to describe the required target
 		public virtual string RequiredTargetText => "";
 
 		/// <summary>

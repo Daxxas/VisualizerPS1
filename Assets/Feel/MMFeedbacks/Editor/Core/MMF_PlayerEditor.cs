@@ -798,6 +798,7 @@ namespace MoreMountains.Feedbacks
 				_feedbackListFeedback.RequiresSetup,
 				_feedbackListFeedback.RequiredTarget,
 				_feedbackListFeedback.DisplayColor,
+				_feedbackListFeedback.DisplayFullHeaderColor,
 				TargetMmfPlayer 
 			);
 
