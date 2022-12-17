@@ -8,7 +8,8 @@ public class AudioSyncer : MonoBehaviour
 {
 
     [SerializeField] private AudioSpectrum audioSpectrum;
-    
+    public AudioSpectrum AudioSpectrum => audioSpectrum;
+
     /// <summary>
     /// Inherit this to cause some behavior on each beat
     /// </summary>
@@ -50,7 +51,7 @@ public class AudioSyncer : MonoBehaviour
         m_timer += Time.deltaTime;
     }
 
-    private void Update()
+    public virtual void Update()
     {
         OnUpdate();
     }
