@@ -106,7 +106,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _contrastGradient: 2
+    - _contrastGradient: 1.2637191
     - _globalGradientOpacity: 1
     - _gradientPower: 1.19
     - _starsDensity: 5

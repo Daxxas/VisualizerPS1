@@ -1991,16 +1991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 330585545}
-  audioLevelTracker: {fileID: 992247391}
   audioSpectrum: {fileID: 992247392}
-  baseFov: 80
-  fovCoefficient: 4
-  fovDeltaCoefficient: 5
-  minFov: 40
-  maxFov: 120
-  useAudioSpectrum: 1
-  smoothPeriod: 0.5
-  spectrumMinValue: 55
+  spectrumMinValue: 65
   spectrumMaxValue: 100
 --- !u!1001 &396938998
 PrefabInstance:
@@ -4264,19 +4256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cff4bac45e6452fa1ce0a64ab2b5c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioLevelTracker: {fileID: 1261560685}
   audioSpectrum: {fileID: 1261560684}
-  useAudioSpectrum: 1
   animator: {fileID: 827248809}
-  speedCoefficient: 1
-  speedDeltaCoefficient: 0.125
-  offset: 2
-  clamp: 1
-  minValue: 0.1
-  maxValue: 10
-  smoothPeriod: 0.5
   spectrumMinValue: 0.01
-  spectrumMaxValue: 0.8
+  spectrumMaxValue: 0.75
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5517,6 +5500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!4 &992247393
 Transform:
   m_ObjectHideFlags: 0
@@ -6359,6 +6343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1154247041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6989,6 +6974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1261560685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7321,6 +7307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1283709301
 MonoBehaviour:
   m_ObjectHideFlags: 0
