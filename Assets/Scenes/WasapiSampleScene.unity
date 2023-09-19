@@ -1340,7 +1340,7 @@ Transform:
   - {fileID: 925127685}
   - {fileID: 1954575039}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219474849
 PrefabInstance:
@@ -1422,6 +1422,93 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 219474849}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &250861564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250861568}
+  - component: {fileID: 250861567}
+  - component: {fileID: 250861566}
+  - component: {fileID: 250861565}
+  m_Layer: 0
+  m_Name: ClapAudioSpectrum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &250861565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250861564}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters:
+  - Type: 1
+    Frequency: 15000
+--- !u!114 &250861566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250861564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WasapiAudioSource: {fileID: 250861565}
+  SpectrumSize: 32
+  ScalingStrategy: 2
+  WindowFunctionType: 5
+  MinFrequency: 20
+  MaxFrequency: 20000
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 250861567}
+--- !u!114 &250861567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250861564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0793238e5fb7e04298f814bbb66d07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spectrumValue: 0
+  smoothPeriod: 0.1
+--- !u!4 &250861568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250861564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &276956076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1851,7 +1938,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -3.01, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -1940,8 +2027,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
@@ -1976,7 +2063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &336959748
 MonoBehaviour:
@@ -1991,9 +2078,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 330585545}
-  audioSpectrum: {fileID: 992247392}
-  spectrumMinValue: 65
-  spectrumMaxValue: 100
+  audioSpectrum: {fileID: 893644443}
+  fovMinValue: 50
+  fovMaxValue: 120
+  meanValueScale: 5
 --- !u!1001 &396938998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2406,7 +2494,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 74.326, y: -89.066, z: 64.894}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -2607,7 +2695,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &472088800
 MonoBehaviour:
@@ -3041,54 +3129,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 555024568}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &586620174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 586620176}
-  - component: {fileID: 586620175}
-  m_Layer: 0
-  m_Name: wasapiAudio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &586620175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586620174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CaptureType: 0
-  Filters:
-  - Type: 0
-    Frequency: 0
---- !u!4 &586620176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586620174}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &620950788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff1c4d00c8b78db4b84a46c1db3abf4c,
@@ -3481,7 +3521,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &729131108
 MonoBehaviour:
@@ -3734,7 +3774,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750294173
 GameObject:
@@ -3801,7 +3841,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &768210185
 PrefabInstance:
@@ -4325,7 +4365,7 @@ Transform:
   - {fileID: 1123738608}
   - {fileID: 1974185843}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -0.539, y: 0, z: 90}
 --- !u!95 &827248809
 Animator:
@@ -4361,8 +4401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1261560684}
   animator: {fileID: 827248809}
-  spectrumMinValue: 0.01
-  spectrumMaxValue: 0.75
+  turnMinValue: 0
+  turnMaxValue: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,7 +4452,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0.531, y: -169.731, z: 0.096}
 --- !u!114 &832575520
 MonoBehaviour:
@@ -5097,6 +5137,91 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 892197019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &893644440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893644444}
+  - component: {fileID: 893644443}
+  - component: {fileID: 893644442}
+  - component: {fileID: 893644441}
+  m_Layer: 0
+  m_Name: FovAudioSpectrum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &893644441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893644440}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters: []
+--- !u!114 &893644442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893644440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WasapiAudioSource: {fileID: 893644441}
+  SpectrumSize: 32
+  ScalingStrategy: 0
+  WindowFunctionType: 2
+  MinFrequency: 100
+  MaxFrequency: 15000
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 893644443}
+--- !u!114 &893644443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893644440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0793238e5fb7e04298f814bbb66d07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spectrumValue: 0
+  smoothPeriod: 1.5
+--- !u!4 &893644444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893644440}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &901613138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5534,90 +5659,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &992247390
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 992247393}
-  - component: {fileID: 992247391}
-  - component: {fileID: 992247392}
-  m_Layer: 0
-  m_Name: FovAudioSpectrum
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &992247391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992247390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c3e183ec27ba64d83e010bf18edb92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{0c5245c0-9d19-4e6b-a04a-45093fa57467}'
-  _channel: 0
-  _filterType: 1
-  _autoGain: 1
-  _gain: 6
-  _dynamicRange: 12
-  _smoothFall: 0
-  _fallSpeed: 1
-  _propertyBinders:
-  - rid: 8931157674840817664
-  references:
-    version: 2
-    RefIds:
-    - rid: 8931157674840817664
-      type: {class: FloatPropertyBinder, ns: Lasp, asm: Lasp.Runtime}
-      data:
-        Enabled: 1
-        Target: {fileID: 992247392}
-        PropertyName: SpectrumValue
-        _propertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-        Value0: 0
-        Value1: 100
---- !u!114 &992247392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992247390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0793238e5fb7e04298f814bbb66d07e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  smoothPeriod: 0.5
---- !u!4 &992247393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992247390}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &996897475
 PrefabInstance:
@@ -5789,6 +5831,93 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 999299259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1008923998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008924002}
+  - component: {fileID: 1008924001}
+  - component: {fileID: 1008924000}
+  - component: {fileID: 1008923999}
+  m_Layer: 0
+  m_Name: BeatAudioSpectrum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1008923999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008923998}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters:
+  - Type: 0
+    Frequency: 1000
+--- !u!114 &1008924000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008923998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WasapiAudioSource: {fileID: 1008923999}
+  SpectrumSize: 32
+  ScalingStrategy: 2
+  WindowFunctionType: 5
+  MinFrequency: 20
+  MaxFrequency: 100
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 1008924001}
+--- !u!114 &1008924001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008923998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0793238e5fb7e04298f814bbb66d07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spectrumValue: 0
+  smoothPeriod: 0.1
+--- !u!4 &1008924002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008923998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1018900616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6393,7 +6522,7 @@ RectTransform:
   m_Children:
   - {fileID: 1253084193}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6409,8 +6538,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1154247038}
-  - component: {fileID: 1154247041}
   - component: {fileID: 1154247039}
+  - component: {fileID: 1154247040}
+  - component: {fileID: 1154247041}
   m_Layer: 0
   m_Name: LowAudioSpectrum
   m_TagString: Untagged
@@ -6425,13 +6555,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154247036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1154247039
 MonoBehaviour:
@@ -6447,7 +6577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spectrumValue: 0
   smoothPeriod: 0.5
---- !u!114 &1154247041
+--- !u!114 &1154247040
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6456,33 +6586,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1154247036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c3e183ec27ba64d83e010bf18edb92, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{0c5245c0-9d19-4e6b-a04a-45093fa57467}'
-  _channel: 0
-  _filterType: 1
-  _autoGain: 1
-  _gain: 6
-  _dynamicRange: 12
-  _smoothFall: 1
-  _fallSpeed: 0.3
-  _propertyBinders:
-  - rid: 8931157674840817664
-  references:
-    version: 2
-    RefIds:
-    - rid: 8931157674840817664
-      type: {class: FloatPropertyBinder, ns: Lasp, asm: Lasp.Runtime}
-      data:
-        Enabled: 1
-        Target: {fileID: 1154247039}
-        PropertyName: SpectrumValue
-        _propertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-        Value0: 0
-        Value1: 100
+  WasapiAudioSource: {fileID: 1154247041}
+  SpectrumSize: 32
+  ScalingStrategy: 2
+  WindowFunctionType: 5
+  MinFrequency: 20
+  MaxFrequency: 5000
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 1154247039}
+--- !u!114 &1154247041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154247036}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters:
+  - Type: 0
+    Frequency: 1000
 --- !u!1001 &1182563936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7055,8 +7188,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1261560686}
-  - component: {fileID: 1261560685}
   - component: {fileID: 1261560684}
+  - component: {fileID: 1261560687}
+  - component: {fileID: 1261560688}
   m_Layer: 0
   m_Name: BypassAudioSpetrum
   m_TagString: Untagged
@@ -7078,42 +7212,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spectrumValue: 0
   smoothPeriod: 0.5
---- !u!114 &1261560685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261560683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c3e183ec27ba64d83e010bf18edb92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{0c5245c0-9d19-4e6b-a04a-45093fa57467}'
-  _channel: 0
-  _filterType: 0
-  _autoGain: 1
-  _gain: 6
-  _dynamicRange: 12
-  _smoothFall: 1
-  _fallSpeed: 0.3
-  _propertyBinders:
-  - rid: 8931157674840817664
-  references:
-    version: 2
-    RefIds:
-    - rid: 8931157674840817664
-      type: {class: FloatPropertyBinder, ns: Lasp, asm: Lasp.Runtime}
-      data:
-        Enabled: 1
-        Target: {fileID: 1261560684}
-        PropertyName: SpectrumValue
-        _propertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-        Value0: 0
-        Value1: 100
 --- !u!4 &1261560686
 Transform:
   m_ObjectHideFlags: 0
@@ -7127,8 +7225,45 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261560687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261560683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WasapiAudioSource: {fileID: 1261560688}
+  SpectrumSize: 32
+  ScalingStrategy: 2
+  WindowFunctionType: 5
+  MinFrequency: 100
+  MaxFrequency: 20000
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 1261560684}
+--- !u!114 &1261560688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261560683}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters: []
 --- !u!1001 &1262028839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7388,8 +7523,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1283709302}
-  - component: {fileID: 1283709301}
   - component: {fileID: 1283709299}
+  - component: {fileID: 1283709303}
+  - component: {fileID: 1283709304}
   m_Layer: 0
   m_Name: HighAudioSpectrum
   m_TagString: Untagged
@@ -7411,42 +7547,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spectrumValue: 0
   smoothPeriod: 0.5
---- !u!114 &1283709301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283709298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c3e183ec27ba64d83e010bf18edb92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{0c5245c0-9d19-4e6b-a04a-45093fa57467}'
-  _channel: 0
-  _filterType: 3
-  _autoGain: 1
-  _gain: 6
-  _dynamicRange: 12
-  _smoothFall: 1
-  _fallSpeed: 0.3
-  _propertyBinders:
-  - rid: 8931157674840817664
-  references:
-    version: 2
-    RefIds:
-    - rid: 8931157674840817664
-      type: {class: FloatPropertyBinder, ns: Lasp, asm: Lasp.Runtime}
-      data:
-        Enabled: 1
-        Target: {fileID: 1283709299}
-        PropertyName: SpectrumValue
-        _propertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-        Value0: 0
-        Value1: 100
 --- !u!4 &1283709302
 Transform:
   m_ObjectHideFlags: 0
@@ -7460,8 +7560,47 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1283709303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283709298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4a270c9884653954e77b133ce15c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WasapiAudioSource: {fileID: 1283709304}
+  SpectrumSize: 96
+  ScalingStrategy: 2
+  WindowFunctionType: 5
+  MinFrequency: 20
+  MaxFrequency: 20000
+  Transformers:
+  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Preview:
+    Values: []
+  audioSpectrum: {fileID: 1283709299}
+--- !u!114 &1283709304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283709298}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ca4c4f9442e14db8c72acac5da136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureType: 1
+  Filters:
+  - Type: 1
+    Frequency: 15000
 --- !u!1001 &1287111877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7757,8 +7896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d659a53e614dc8beaf5df8194e9a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1283709299}
-  bias: 80
+  audioSpectrum: {fileID: 1008924001}
+  bias: 1.7
   timeStep: 0.05
   timeToBeat: 0.05
   restSmoothTime: 0
@@ -8004,7 +8143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1315675738
 MonoBehaviour:
@@ -9436,7 +9575,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.5
+        RemapIntensityOne: 0.65
 --- !u!4 &1400809036
 Transform:
   m_ObjectHideFlags: 0
@@ -9450,7 +9589,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1400809037
 MonoBehaviour:
@@ -9464,8 +9603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d659a53e614dc8beaf5df8194e9a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1154247039}
-  bias: 90
+  audioSpectrum: {fileID: 1008924001}
+  bias: 1.7
   timeStep: 0.01
   timeToBeat: 0.01
   restSmoothTime: 0
@@ -9482,7 +9621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1400809035}
-  audioLevelTracker: {fileID: 1261560685}
+  audioSpectrum: {fileID: 1008924001}
   maxDistorsion: 0.4
   maxGain: 50
 --- !u!1001 &1408745002
@@ -11863,7 +12002,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5e5781b116a34b04eb6dc97691d197d2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e5781b116a34b04eb6dc97691d197d2,
         type: 3}

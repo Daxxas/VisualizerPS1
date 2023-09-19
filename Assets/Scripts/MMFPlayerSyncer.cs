@@ -16,5 +16,6 @@ public class MMFPlayerSyncer : AudioSyncer
     {
         base.OnBeat();
         player.PlayFeedbacks();
+        Debug.Log("beat!");
     }
 }

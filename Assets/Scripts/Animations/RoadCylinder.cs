@@ -8,13 +8,13 @@ public class RoadCylinder : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Audio Spectrum")] 
-    [SerializeField] private float spectrumMinValue = 0f;
-    [SerializeField] private float spectrumMaxValue = 1f;
+    [SerializeField] private float turnMinValue = 0f;
+    [SerializeField] private float turnMaxValue = 1f;
 
     private void Update()
     {
        
-        float turnMultiplier =  Mathf.Lerp(spectrumMinValue, spectrumMaxValue, audioSpectrum.SpectrumMeanValue/100f);
+        float turnMultiplier =  Mathf.Lerp(turnMinValue, turnMaxValue, audioSpectrum.SpectrumMeanValue);
 
         turnMultiplier = -Mathf.Abs(turnMultiplier);
         // Debug.Log("Turn Multiplier : " + turnMultiplier + " | audioLevelTracker.currentGain : " + audioLevelTracker.currentGain);

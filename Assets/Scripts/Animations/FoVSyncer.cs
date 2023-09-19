@@ -10,14 +10,15 @@ public class FoVSyncer : MonoBehaviour
     [SerializeField] private AudioSpectrum audioSpectrum;
     
     [Header("Audio Spectrum")] 
-    [SerializeField] private float spectrumMinValue = 50f;
-    [SerializeField] private float spectrumMaxValue = 120f;
+    [SerializeField] private float fovMinValue = 50f;
+    [SerializeField] private float fovMaxValue = 120f;
+    [SerializeField] private float meanValueScale = 1f;
     
     
     private void Update()
     {
         
-        float fov =  Mathf.Lerp(spectrumMinValue, spectrumMaxValue, audioSpectrum.SpectrumMeanValue/100f);
+        float fov =  Mathf.Lerp(fovMinValue, fovMaxValue, audioSpectrum.SpectrumMeanValue/meanValueScale);
         // Debug.Log("Turn Multiplier : " + turnMultiplier + " | audioLevelTracker.currentGain : " + audioLevelTracker.currentGain);
         camera.fieldOfView = fov;
         
