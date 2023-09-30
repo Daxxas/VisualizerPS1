@@ -1471,15 +1471,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 250861565}
   SpectrumSize: 32
-  ScalingStrategy: 2
+  ScalingStrategy: 0
   WindowFunctionType: 5
   MinFrequency: 20
   MaxFrequency: 20000
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
   audioSpectrum: {fileID: 250861567}
+  autoGain: 1
 --- !u!114 &250861567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5193,6 +5193,7 @@ MonoBehaviour:
   Preview:
     Values: []
   audioSpectrum: {fileID: 893644443}
+  autoGain: 1
 --- !u!114 &893644443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5880,15 +5881,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 1008923999}
   SpectrumSize: 32
-  ScalingStrategy: 2
+  ScalingStrategy: 0
   WindowFunctionType: 5
   MinFrequency: 20
   MaxFrequency: 100
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
   audioSpectrum: {fileID: 1008924001}
+  autoGain: 1
 --- !u!114 &1008924001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6591,15 +6592,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 1154247041}
   SpectrumSize: 32
-  ScalingStrategy: 2
+  ScalingStrategy: 0
   WindowFunctionType: 5
   MinFrequency: 20
   MaxFrequency: 5000
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
   audioSpectrum: {fileID: 1154247039}
+  autoGain: 1
 --- !u!114 &1154247041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7250,6 +7251,7 @@ MonoBehaviour:
   Preview:
     Values: []
   audioSpectrum: {fileID: 1261560684}
+  autoGain: 1
 --- !u!114 &1261560688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7576,15 +7578,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 1283709304}
   SpectrumSize: 96
-  ScalingStrategy: 2
+  ScalingStrategy: 0
   WindowFunctionType: 5
   MinFrequency: 20
   MaxFrequency: 20000
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
   audioSpectrum: {fileID: 1283709299}
+  autoGain: 1
 --- !u!114 &1283709304
 MonoBehaviour:
   m_ObjectHideFlags: 0
