@@ -1440,7 +1440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &250861565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,8 +1478,10 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
-  audioSpectrum: {fileID: 250861567}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.2
+  audioSpectrum: {fileID: 250861567}
 --- !u!114 &250861567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3806,6 +3808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -4369,7 +4372,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -0.539, y: 0, z: 90}
 --- !u!95 &827248809
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4386,7 +4389,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &827248810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5155,7 +5159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &893644441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5192,8 +5196,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
   Preview:
     Values: []
-  audioSpectrum: {fileID: 893644443}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.2
+  audioSpectrum: {fileID: 893644443}
 --- !u!114 &893644443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,7 +5856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1008923999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5888,8 +5894,10 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
-  audioSpectrum: {fileID: 1008924001}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.2
+  audioSpectrum: {fileID: 1008924001}
 --- !u!114 &1008924001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6548,7 +6556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1154247038
 Transform:
   m_ObjectHideFlags: 0
@@ -6599,8 +6607,10 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
-  audioSpectrum: {fileID: 1154247039}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.2
+  audioSpectrum: {fileID: 1154247039}
 --- !u!114 &1154247041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7242,16 +7252,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 1261560688}
   SpectrumSize: 32
-  ScalingStrategy: 2
+  ScalingStrategy: 0
   WindowFunctionType: 5
   MinFrequency: 100
   MaxFrequency: 20000
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
-  audioSpectrum: {fileID: 1261560684}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.02
+  audioSpectrum: {fileID: 1261560684}
 --- !u!114 &1261560688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7534,7 +7545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1283709299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7585,8 +7596,10 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
-  audioSpectrum: {fileID: 1283709299}
   autoGain: 1
+  dynamicRange: 0.2
+  decaySpeed: 0.2
+  audioSpectrum: {fileID: 1283709299}
 --- !u!114 &1283709304
 MonoBehaviour:
   m_ObjectHideFlags: 0

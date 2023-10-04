@@ -8,6 +8,8 @@ namespace Assets.WasapiAudio.Scripts.Unity
     {
         private Core.WasapiAudio _wasapiAudio;
 
+        public Core.WasapiAudio WasapiAudio => _wasapiAudio;
+
         // Inspector Properties
         public WasapiCaptureType CaptureType = WasapiCaptureType.Loopback;
         public WasapiAudioFilter[] Filters;

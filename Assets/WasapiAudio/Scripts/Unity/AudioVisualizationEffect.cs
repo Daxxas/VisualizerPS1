@@ -1,6 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Assets.WasapiAudio.Scripts.Core;
+using CSCore;
+using CSCore.CoreAudioAPI;
+using CSCore.SoundIn;
+using CSCore.Streams;
 using UnityEngine;
 
 namespace Assets.WasapiAudio.Scripts.Unity
@@ -8,7 +13,9 @@ namespace Assets.WasapiAudio.Scripts.Unity
     public abstract class AudioVisualizationEffect : MonoBehaviour
     {
         private float[] _spectrumData;
-
+        private float _currentLevel = 0.0f;
+        private float _normalizedInput = 0.0f;
+        
         // Inspector Properties
         public WasapiAudioSource WasapiAudioSource;
         public int SpectrumSize = 32;
@@ -23,7 +30,35 @@ namespace Assets.WasapiAudio.Scripts.Unity
         [SpectrumDataPreview]
         public SpectrumData Preview;
 
+        [Header("Auto Gain Settings")]
+        [SerializeField] private bool autoGain = true;
+        [SerializeField] private float dynamicRange = .2f;
+        [SerializeField] private float decaySpeed = .2f;
+        [SerializeField] private bool smoothFall = true;
+        [SerializeField] private float fallSpeed = 0f;
+        
+        
         protected bool IsIdle => _spectrumData?.All(v => v < 0.001f) ?? true;
+
+        private PeakMeter peakMeter;
+
+        private float _fall = 0;
+        
+        public float CurrentLevel
+        {
+            get
+            {
+                _currentLevel = GetLevel();
+                return _currentLevel;
+            }
+        }
+
+        public float NormalizedInput => _normalizedInput;
+
+        public float DynamicRange => dynamicRange;
+        
+        private float _normalizedLevel = 0.0f;
+        public float NormalizedLevel => _normalizedLevel;
 
         public virtual void Awake()
         {
@@ -38,12 +73,21 @@ namespace Assets.WasapiAudio.Scripts.Unity
                 {
                     _spectrumData = spectrumData;
                 });
-
+            
             WasapiAudioSource.AddReceiver(receiver);
-
+            
             Preview = new SpectrumData();
         }
 
+        protected float GetLevel()
+        {
+            if (!Application.isPlaying)
+                return 0;
+            
+            float peakValue = AudioMeterInformation.FromDevice(WasapiAudioSource.WasapiAudio.WasapiCapture.Device).GetPeakValue();
+            return peakValue;
+        }
+        
         protected float[] GetSpectrumData()
         {
             if (WasapiAudioSource == null)
@@ -67,6 +111,39 @@ namespace Assets.WasapiAudio.Scripts.Unity
             Preview.Values = spectrumData;
 
             return spectrumData;
+        }
+
+        public virtual void Update()
+        {
+            if (autoGain)
+            {
+                _currentLevel = GetLevel();
+                
+                // Slowly return to the noise floor.
+                _normalizedInput = Mathf.Max(_normalizedInput - decaySpeed * Time.deltaTime, 0);
+                // Pull up by input with a small headroom.
+                var room = dynamicRange * 0.05f;
+                _normalizedInput = Mathf.Clamp(_currentLevel + room, _normalizedInput, 1);
+
+                if (smoothFall)
+                {
+                    _fall += Mathf.Pow(10, 1 + fallSpeed * 2) * Time.deltaTime;
+                    _normalizedInput -= _fall * Time.deltaTime;
+                
+                    // Pull up by input.
+                    if (_normalizedLevel < _normalizedInput)
+                    {
+                        _normalizedLevel = _normalizedInput;
+                        _fall = 0;
+                    }
+                }
+                else
+                {
+                    _normalizedLevel = _normalizedInput;
+                }
+                
+                Debug.Log("Current: " + _currentLevel + " Normalized: " + _normalizedInput);
+            }
         }
     }
 }

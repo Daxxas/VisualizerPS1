@@ -21,7 +21,11 @@ namespace Assets.WasapiAudio.Scripts.Core
         private SoundInSource _soundInSource;
         private IWaveSource _realtimeSource;
         private SingleBlockNotificationStream _singleBlockNotificationStream;
-        
+
+        public SoundInSource SoundInSource => _soundInSource;
+
+        public WasapiCapture WasapiCapture => _wasapiCapture;
+
         public WasapiAudio(WasapiCaptureType captureType, WasapiAudioFilter[] filters)
         {
             switch (_captureType)
