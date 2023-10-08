@@ -40,9 +40,10 @@ public class AudioSyncer : MonoBehaviour
     /// </summary>
     public virtual void OnUpdate()
     { 
+        m_isBeat = false;
         // update audio value
         m_previousAudioValue = m_audioValue;
-        m_audioValue = wasapiBinder.SpectrumValue;
+        m_audioValue = wasapiBinder.NormalizedInput;
 
         // if audio value went below the bias during this frame
         if (m_previousAudioValue > bias &&
@@ -63,7 +64,6 @@ public class AudioSyncer : MonoBehaviour
         }
 
         m_timer += Time.deltaTime;
-        m_isBeat = false;
     }
 
     public virtual void Update()
@@ -71,7 +71,7 @@ public class AudioSyncer : MonoBehaviour
         OnUpdate();
     }
 
-    float lastBeat = 0;
+    int lastBeat = 0;
     
     private void OnGUI()
     {

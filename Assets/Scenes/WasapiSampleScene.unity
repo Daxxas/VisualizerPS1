@@ -1560,7 +1560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &250861565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,7 +1605,6 @@ MonoBehaviour:
   forceSmoothFall: 1
   smoothFall: 1
   debugDisplay: 0
-  spectrumValue: 0
   smoothPeriod: 0.5
 --- !u!114 &250861567
 MonoBehaviour:
@@ -4749,7 +4748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827248805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cff4bac45e6452fa1ce0a64ab2b5c48, type: 3}
   m_Name: 
@@ -5611,7 +5610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &893644441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5656,7 +5655,6 @@ MonoBehaviour:
   forceSmoothFall: 1
   smoothFall: 1
   debugDisplay: 0
-  spectrumValue: 0
   smoothPeriod: 0.5
 --- !u!114 &893644443
 MonoBehaviour:
@@ -6388,7 +6386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaptureType: 1
-  Filters: []
+  Filters:
+  - Type: 0
+    Frequency: 4000
 --- !u!114 &1008924000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6402,11 +6402,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WasapiAudioSource: {fileID: 1008923999}
-  SpectrumSize: 32
+  SpectrumSize: 128
   ScalingStrategy: 0
   WindowFunctionType: 5
-  MinFrequency: 600
-  MaxFrequency: 7000
+  MinFrequency: 20
+  MaxFrequency: 15000
   Transformers: []
   Preview:
     Values:
@@ -6448,8 +6448,7 @@ MonoBehaviour:
   decaySpeed: 0.04
   forceSmoothFall: 0
   smoothFall: 1
-  debugDisplay: 0
-  spectrumValue: 0
+  debugDisplay: 1
   smoothPeriod: 0.5
 --- !u!114 &1008924001
 MonoBehaviour:
@@ -7159,7 +7158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1154247038
 Transform:
   m_ObjectHideFlags: 0
@@ -7217,7 +7216,6 @@ MonoBehaviour:
   forceSmoothFall: 1
   smoothFall: 1
   debugDisplay: 0
-  spectrumValue: 0
   smoothPeriod: 0.5
 --- !u!114 &1154247041
 MonoBehaviour:
@@ -7876,7 +7874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1261560684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7933,8 +7931,7 @@ MonoBehaviour:
   decaySpeed: 0.02
   forceSmoothFall: 1
   smoothFall: 1
-  debugDisplay: 0
-  spectrumValue: 0
+  debugDisplay: 1
   smoothPeriod: 0.5
 --- !u!114 &1261560688
 MonoBehaviour:
@@ -8248,7 +8245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1283709299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8306,7 +8303,6 @@ MonoBehaviour:
   forceSmoothFall: 1
   smoothFall: 1
   debugDisplay: 0
-  spectrumValue: 0
   smoothPeriod: 0.5
 --- !u!114 &1283709304
 MonoBehaviour:
@@ -10472,7 +10468,7 @@ MonoBehaviour:
   timeToBeat: 0.01
   restSmoothTime: 0
   debugMode: 1
-  wasapiBinder: {fileID: 1008924000}
+  wasapiBinder: {fileID: 1261560687}
 --- !u!114 &1400809038
 MonoBehaviour:
   m_ObjectHideFlags: 0
