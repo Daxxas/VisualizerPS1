@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using DefaultNamespace;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Parent class responsible for extracting beats from..
@@ -6,9 +9,20 @@
 /// </summary>
 public class AudioSyncer : MonoBehaviour
 {
+    public float bias = 80f;
+    public float timeStep = .05f;
+    public float timeToBeat = .05f;
+    public float restSmoothTime;
 
-    [SerializeField] private AudioSpectrum audioSpectrum;
-    public AudioSpectrum AudioSpectrum => audioSpectrum;
+    private float m_previousAudioValue;
+    private float m_audioValue;
+    private float m_timer;
+
+    protected bool m_isBeat;
+
+    [SerializeField] private bool debugMode = false;
+    [SerializeField] private WasapiBinder wasapiBinder;
+    public WasapiBinder WasapiBinder => wasapiBinder;
 
     /// <summary>
     /// Inherit this to cause some behavior on each beat
@@ -28,7 +42,7 @@ public class AudioSyncer : MonoBehaviour
     { 
         // update audio value
         m_previousAudioValue = m_audioValue;
-        m_audioValue = audioSpectrum.SpectrumValue;
+        m_audioValue = wasapiBinder.SpectrumValue;
 
         // if audio value went below the bias during this frame
         if (m_previousAudioValue > bias &&
@@ -49,6 +63,7 @@ public class AudioSyncer : MonoBehaviour
         }
 
         m_timer += Time.deltaTime;
+        m_isBeat = false;
     }
 
     public virtual void Update()
@@ -56,14 +71,19 @@ public class AudioSyncer : MonoBehaviour
         OnUpdate();
     }
 
-    public float bias = 80f;
-    public float timeStep = .05f;
-    public float timeToBeat = .05f;
-    public float restSmoothTime;
+    float lastBeat = 0;
+    
+    private void OnGUI()
+    {
+        if (!debugMode)
+            return;
+        
+        GUI.Label(new Rect(10, 10, 200, 20), "NormalizedInput: " + m_audioValue.ToString());
 
-    private float m_previousAudioValue;
-    private float m_audioValue;
-    private float m_timer;
-
-    protected bool m_isBeat;
+        if (m_isBeat)
+        {
+            lastBeat = Time.frameCount;
+        }
+        GUI.Label(new Rect(10, 30, 200, 20), "Beat: " + lastBeat);
+    }
 }

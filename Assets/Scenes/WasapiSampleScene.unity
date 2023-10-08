@@ -132,6 +132,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -272,6 +282,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -361,6 +381,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -444,6 +474,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -616,6 +656,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -726,6 +776,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -816,6 +876,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -894,6 +964,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -976,6 +1056,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -1056,6 +1146,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -1134,6 +1234,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -1222,7 +1332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &216912306
 Transform:
   m_ObjectHideFlags: 0
@@ -1351,6 +1461,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -1440,7 +1560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &250861565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,10 +1598,15 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
+  meanLevelSmoothSharpness: 0.5
   autoGain: 1
   dynamicRange: 0.2
-  decaySpeed: 0.2
-  audioSpectrum: {fileID: 250861567}
+  decaySpeed: 0.02
+  forceSmoothFall: 1
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &250861567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,6 +1710,16 @@ PrefabInstance:
       objectReference: {fileID: 1154247039}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -1603,6 +1738,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -1695,6 +1840,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -1773,6 +1928,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -2080,10 +2245,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 330585545}
-  audioSpectrum: {fileID: 893644443}
+  wasapiBinder: {fileID: 893644442}
+  fovCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.93864495
+      value: 0.66486895
+      inSlope: 1.6456248
+      outSlope: 1.6456248
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.035321523
+      outWeight: 0.3800179
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3.054297
+      outSlope: 3.054297
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.029702961
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   fovMinValue: 50
-  fovMaxValue: 120
-  meanValueScale: 5
+  fovMaxValue: 100
 --- !u!1001 &396938998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2091,6 +2288,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -2181,6 +2388,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -2330,6 +2547,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -2527,6 +2754,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -2711,11 +2948,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a9ffea944b4124b5bb71e5f12965c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1261560684}
   bias: 80
   timeStep: 0.05
   timeToBeat: 0.05
   restSmoothTime: 0
+  debugMode: 0
+  wasapiBinder: {fileID: 1261560687}
   onEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2729,6 +2967,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -2809,6 +3057,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -2971,6 +3229,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -3120,6 +3388,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -3206,6 +3484,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -3224,6 +3512,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -3314,7 +3612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &729131106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3537,11 +3835,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d659a53e614dc8beaf5df8194e9a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1154247039}
   bias: 80
   timeStep: 0.05
   timeToBeat: 0.05
   restSmoothTime: 0
+  debugMode: 0
+  wasapiBinder: {fileID: 1008924000}
 --- !u!1001 &745233146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3549,6 +3848,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -3670,7 +3979,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3700,7 +4009,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.10344887
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3745,7 +4054,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 1
+  m_UseWorldSpace: 0
   m_Loop: 0
 --- !u!114 &747487617
 MonoBehaviour:
@@ -3762,7 +4071,9 @@ MonoBehaviour:
   lineRenderer: {fileID: 747487616}
   xStep: 0.05
   nextPointPosition: {x: 0, y: 0}
-  audioSpectrum: {fileID: 0}
+  wasapiBinder: {fileID: 1008924000}
+  maxPoints: 600
+  yScale: 10
 --- !u!4 &747487618
 Transform:
   m_ObjectHideFlags: 0
@@ -3771,7 +4082,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747487615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16.82, y: 5.6, z: -11.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3853,6 +4164,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
       propertyPath: audioSpectrum
@@ -4000,6 +4321,16 @@ PrefabInstance:
       objectReference: {fileID: 1154247039}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -4018,6 +4349,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -4168,6 +4509,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
       propertyPath: audioSpectrum
@@ -4403,10 +4754,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cff4bac45e6452fa1ce0a64ab2b5c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1261560684}
+  wasapiBinder: {fileID: 1261560687}
   animator: {fileID: 827248809}
-  turnMinValue: 0
-  turnMaxValue: 1
+  turnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.05
+      inSlope: 0.49086893
+      outSlope: 0.49086893
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.05040504
+    - serializedVersion: 3
+      time: 0.45805594
+      value: 0.39572737
+      inSlope: 0.039551787
+      outSlope: 0.039551787
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15337728
+    - serializedVersion: 3
+      time: 0.8620912
+      value: 0.68931144
+      inSlope: -0.036619816
+      outSlope: -0.036619816
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.044669095
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 4.008764
+      outSlope: 4.008764
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.03960395
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  turnFactor: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,6 +5042,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -4810,6 +5212,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -4828,6 +5240,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -4908,6 +5330,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -5050,6 +5482,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -5068,6 +5510,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -5159,7 +5611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &893644441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5173,7 +5625,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaptureType: 1
-  Filters: []
+  Filters:
+  - Type: 0
+    Frequency: 10000
 --- !u!114 &893644442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,17 +5643,21 @@ MonoBehaviour:
   WasapiAudioSource: {fileID: 893644441}
   SpectrumSize: 32
   ScalingStrategy: 0
-  WindowFunctionType: 2
+  WindowFunctionType: 5
   MinFrequency: 100
   MaxFrequency: 15000
-  Transformers:
-  - {fileID: 11400000, guid: b5769909b5cff1840a73346f76b04ffd, type: 2}
+  Transformers: []
   Preview:
     Values: []
+  meanLevelSmoothSharpness: 5
   autoGain: 1
   dynamicRange: 0.2
-  decaySpeed: 0.2
-  audioSpectrum: {fileID: 893644443}
+  decaySpeed: 0.02
+  forceSmoothFall: 1
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &893644443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5246,6 +5704,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -132.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -5328,6 +5796,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -5408,6 +5886,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -5486,6 +5974,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -5687,6 +6185,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -5827,6 +6335,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -5856,7 +6374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1008923999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5870,9 +6388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaptureType: 1
-  Filters:
-  - Type: 0
-    Frequency: 1000
+  Filters: []
 --- !u!114 &1008924000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,15 +6405,52 @@ MonoBehaviour:
   SpectrumSize: 32
   ScalingStrategy: 0
   WindowFunctionType: 5
-  MinFrequency: 20
-  MaxFrequency: 100
+  MinFrequency: 600
+  MaxFrequency: 7000
   Transformers: []
   Preview:
-    Values: []
+    Values:
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.3689863
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.39457777
+    - 0.4100267
+    - 0.4100267
+    - 0.4100267
+    - 0.4100267
+    - 0.4100267
+    - 0.5116545
+    - 0.5116545
+    - 0.5116545
+    - 0.60690904
+    - 0.60690904
+    - 0.6618629
+    - 0.65968037
+    - 0.5670878
+  meanLevelSmoothSharpness: 0.5
   autoGain: 1
   dynamicRange: 0.2
-  decaySpeed: 0.2
-  audioSpectrum: {fileID: 1008924001}
+  decaySpeed: 0.04
+  forceSmoothFall: 0
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1008924001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6001,6 +6554,16 @@ PrefabInstance:
       objectReference: {fileID: 1154247039}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -6019,6 +6582,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
       propertyPath: audioSpectrum
@@ -6101,6 +6674,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -6181,6 +6764,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -6259,6 +6852,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 3599012539291245943, guid: 51107e6a468f5d8489ea3af4f2cf3576,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3599012539291245943, guid: 51107e6a468f5d8489ea3af4f2cf3576,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3599012539291245943, guid: 51107e6a468f5d8489ea3af4f2cf3576,
         type: 3}
       propertyPath: audioSpectrum
@@ -6556,7 +7159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1154247038
 Transform:
   m_ObjectHideFlags: 0
@@ -6607,10 +7210,15 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
+  meanLevelSmoothSharpness: 0.5
   autoGain: 1
   dynamicRange: 0.2
-  decaySpeed: 0.2
-  audioSpectrum: {fileID: 1154247039}
+  decaySpeed: 0.02
+  forceSmoothFall: 1
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1154247041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6696,6 +7304,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -6714,6 +7332,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -6796,6 +7424,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -6874,6 +7512,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -6964,6 +7612,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -132.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -7119,6 +7777,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -7259,10 +7927,15 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
+  meanLevelSmoothSharpness: 0.5
   autoGain: 1
   dynamicRange: 0.2
   decaySpeed: 0.02
-  audioSpectrum: {fileID: 1261560684}
+  forceSmoothFall: 1
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1261560688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7284,6 +7957,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -7376,6 +8059,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -7454,6 +8147,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -7545,7 +8248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1283709299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7596,10 +8299,15 @@ MonoBehaviour:
   Transformers: []
   Preview:
     Values: []
+  meanLevelSmoothSharpness: 0.5
   autoGain: 1
   dynamicRange: 0.2
-  decaySpeed: 0.2
-  audioSpectrum: {fileID: 1283709299}
+  decaySpeed: 0.02
+  forceSmoothFall: 1
+  smoothFall: 1
+  debugDisplay: 0
+  spectrumValue: 0
+  smoothPeriod: 0.5
 --- !u!114 &1283709304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7623,6 +8331,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -7703,6 +8421,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -7795,6 +8523,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -7885,7 +8623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1315675734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7911,11 +8649,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d659a53e614dc8beaf5df8194e9a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1008924001}
   bias: 1.7
   timeStep: 0.05
   timeToBeat: 0.05
   restSmoothTime: 0
+  debugMode: 0
+  wasapiBinder: {fileID: 250861566}
 --- !u!114 &1315675736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8317,6 +9056,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -8395,6 +9144,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -8706,6 +9465,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -8724,6 +9493,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -8816,6 +9595,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -8894,6 +9683,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -8980,6 +9779,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -9122,6 +9931,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -9140,6 +9959,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -9287,6 +10116,16 @@ PrefabInstance:
       objectReference: {fileID: 1154247039}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -9305,6 +10144,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -9618,11 +10467,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d659a53e614dc8beaf5df8194e9a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1008924001}
-  bias: 1.7
+  bias: 0.7
   timeStep: 0.01
   timeToBeat: 0.01
   restSmoothTime: 0
+  debugMode: 1
+  wasapiBinder: {fileID: 1008924000}
 --- !u!114 &1400809038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9636,7 +10486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1400809035}
-  audioSpectrum: {fileID: 1008924001}
+  wasapiBinder: {fileID: 1008924000}
   maxDistorsion: 0.4
   maxGain: 50
 --- !u!1001 &1408745002
@@ -9717,6 +10567,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -9795,6 +10655,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 3599012539291245943, guid: 57ad9eba15c9e5944b2ed74fa9674a90,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3599012539291245943, guid: 57ad9eba15c9e5944b2ed74fa9674a90,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3599012539291245943, guid: 57ad9eba15c9e5944b2ed74fa9674a90,
         type: 3}
       propertyPath: audioSpectrum
@@ -9883,6 +10753,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -9961,6 +10841,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
       propertyPath: audioSpectrum
@@ -10043,6 +10933,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -10121,6 +11021,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -10283,6 +11193,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -10381,6 +11301,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
       propertyPath: audioSpectrum
@@ -10491,6 +11421,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -10639,6 +11579,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -10667,6 +11617,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -132.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -10809,6 +11769,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -10892,6 +11862,16 @@ PrefabInstance:
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
       propertyPath: audioSpectrum
@@ -10996,6 +11976,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -11147,6 +12137,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11225,6 +12225,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -11307,6 +12317,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11385,6 +12405,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -11467,6 +12497,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11547,6 +12587,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11625,6 +12675,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -11776,6 +12836,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11856,6 +12926,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -11934,6 +13014,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
       propertyPath: audioSpectrum
@@ -12112,6 +13202,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -12190,6 +13290,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum
@@ -12272,6 +13382,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -12352,6 +13472,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -12430,6 +13560,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
         type: 3}
       propertyPath: audioSpectrum
@@ -12617,6 +13757,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -12748,6 +13898,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -12826,6 +13986,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
       propertyPath: audioSpectrum
@@ -12968,6 +14138,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13059,6 +14239,16 @@ PrefabInstance:
       objectReference: {fileID: 1154247039}
     - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 8182233698235946039, guid: 00cb67bb61b9c3948b014459eb3b99fd,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13071,6 +14261,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 1035209676855690463, guid: b8406c5485e861f449a65cf0b9829757,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 1035209676855690463, guid: b8406c5485e861f449a65cf0b9829757,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 1035209676855690463, guid: b8406c5485e861f449a65cf0b9829757,
         type: 3}
       propertyPath: audioSpectrum
@@ -13145,6 +14345,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 266441822780422446, guid: b9bb2efbfe4462d42b0fddf41296259f,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 266441822780422446, guid: b9bb2efbfe4462d42b0fddf41296259f,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 266441822780422446, guid: b9bb2efbfe4462d42b0fddf41296259f,
         type: 3}
       propertyPath: audioSpectrum
@@ -13287,6 +14497,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 6786447719741919152, guid: eb6758303c6e1364da50e290be78c7c7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13305,6 +14525,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4490135360606775598, guid: 637990d37a861da4a89f849cdb908c43,
         type: 3}
       propertyPath: audioSpectrum
@@ -13381,6 +14611,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 166144980817661770, guid: 968674118b4c32f43bdbe3f0b0a3225a,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 166144980817661770, guid: 968674118b4c32f43bdbe3f0b0a3225a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 166144980817661770, guid: 968674118b4c32f43bdbe3f0b0a3225a,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13455,6 +14695,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 5965910477997888023, guid: 9fbd996f9e5f8c043aeb79a54ce7e184,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13527,6 +14777,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992391339}
     m_Modifications:
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 4127406255794579719, guid: 27df1b1595da8ae4494b2a7db732677a,
         type: 3}
       propertyPath: audioSpectrum
@@ -13619,6 +14879,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
         type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
+    - target: {fileID: 3554634460933942857, guid: 6d7dbbead0963e14883c99df17588fc7,
+        type: 3}
       propertyPath: audioSpectrum
       value: 
       objectReference: {fileID: 1154247039}
@@ -13697,6 +14967,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216912306}
     m_Modifications:
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: audioTracker
+      value: 
+      objectReference: {fileID: 1154247039}
+    - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
+        type: 3}
+      propertyPath: wasapiBinder
+      value: 
+      objectReference: {fileID: 1008924000}
     - target: {fileID: 2510315133379099626, guid: 36a4624656ecdbe4296a3894b3b7e70a,
         type: 3}
       propertyPath: audioSpectrum

@@ -9,22 +9,30 @@ namespace DefaultNamespace
 {
     public class WasapiBinder : AudioVisualizationEffect
     {
-        [SerializeField] private AudioSpectrum audioSpectrum;
+        private float spectrumValue;
+        public float SpectrumValue { get => spectrumValue; set => spectrumValue = value; }
 
+        public float smoothPeriod = .5f;
+     
+        private float spectrumMeanValue;
+        public float SpectrumMeanValue => spectrumMeanValue;
+        
         public override void Update()
         {
             base.Update();
             
             float[] spectrumData = GetSpectrumData();
             // Mean of spectrum data
-            float spectrumMeanValue = 0;
-            foreach (float spectrumValue in spectrumData)
-            {
-                spectrumMeanValue += spectrumValue;
-            }
-            spectrumMeanValue /= spectrumData.Length;
+            float spectrumArrayMeanValue = 0;
             
-            audioSpectrum.SpectrumValue = spectrumMeanValue;
+            foreach (float interationSpectrumValue in spectrumData)
+            {
+                spectrumArrayMeanValue += interationSpectrumValue;
+            }
+            spectrumArrayMeanValue /= spectrumData.Length;
+            
+            spectrumValue = spectrumArrayMeanValue;
+            spectrumMeanValue = Mathf.Lerp(spectrumArrayMeanValue, spectrumValue, Time.deltaTime / smoothPeriod);
         }
     }
 }

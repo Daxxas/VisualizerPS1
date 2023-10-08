@@ -1,25 +1,26 @@
 ﻿using System;
+using DefaultNamespace;
 using Lasp;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class FoVSyncer : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Camera camera;
-    [SerializeField] private AudioSpectrum audioSpectrum;
-    
-    [Header("Audio Spectrum")] 
+    [SerializeField] private WasapiBinder wasapiBinder;
+
+    [Header("Audio Spectrum")] [SerializeField]
+    private AnimationCurve fovCurve = AnimationCurve.Linear(0,0,1,1);
     [SerializeField] private float fovMinValue = 50f;
     [SerializeField] private float fovMaxValue = 120f;
-    [SerializeField] private float meanValueScale = 1f;
     
     
     private void Update()
     {
-        
-        float fov =  Mathf.Lerp(fovMinValue, fovMaxValue, audioSpectrum.SpectrumMeanValue/meanValueScale);
-        // Debug.Log("Turn Multiplier : " + turnMultiplier + " | audioLevelTracker.currentGain : " + audioLevelTracker.currentGain);
+
+        float fov = (fovCurve.Evaluate(wasapiBinder.SmoothedMeanLevel) * (fovMaxValue - fovMinValue)) + fovMinValue;
         camera.fieldOfView = fov;
         
     }

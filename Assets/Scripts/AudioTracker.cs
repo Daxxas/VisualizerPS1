@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using Lasp;
 using UnityEngine;
 
-public class AudioSpectrum : MonoBehaviour
+public class AudioTracker : MonoBehaviour
 {
      public float spectrumValue;
-     public float SpectrumValue { get => spectrumValue; set => spectrumValue = value; }
+     //public float SpectrumValue { get => spectrumValue; set => spectrumValue = value; }
 
      public float smoothPeriod = .5f;
      
      private float spectrumMeanValue;
      public float SpectrumMeanValue => spectrumMeanValue;
-
 
      public void UpdateSpectrumMeanValue()
      {

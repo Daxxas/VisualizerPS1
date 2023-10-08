@@ -2,12 +2,13 @@
 using MoreMountains.Feedbacks;
 using MoreMountains.FeedbacksForThirdParty;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class LensDistorsionController : MonoBehaviour
 {
     [SerializeField] private MMF_Player player;
-    [SerializeField] private AudioSpectrum audioSpectrum;
+    [SerializeField] private WasapiBinder wasapiBinder;
 
     [SerializeField] private float maxDistorsion = 0.5f;
     [SerializeField] private float maxGain = 10f;
@@ -21,8 +22,7 @@ public class LensDistorsionController : MonoBehaviour
 
     private void Update()
     {
-       // float distorsion = (60f - audioSpectrum.SpectrumMeanValue) * maxDistorsion / maxGain;
-        // Debug.Log(distorsion + " - " + audioLevelTracker.currentGain);
-        //lensDistortionUrp.RemapIntensityOne = distorsion;
+        float distorsion = (60f - wasapiBinder.NormalizedInput) * maxDistorsion / maxGain;
+        lensDistortionUrp.RemapIntensityOne = distorsion;
     }
 }

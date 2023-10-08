@@ -20,7 +20,7 @@ public class MusicEventSyncer : AudioSyncer
     {
         base.Update();
         
-        float frameDelta = AudioSpectrum.SpectrumMeanValue - meanValuePreviousFrame;
+        float frameDelta = WasapiBinder.SpectrumMeanValue - meanValuePreviousFrame;
         deltaMean = Mathf.Lerp(deltaMean, frameDelta, Time.deltaTime / meanDeltaSmoothPeriod);
 
         // calculate max delta mean
@@ -36,7 +36,7 @@ public class MusicEventSyncer : AudioSyncer
         
         // Debug.Log(deltaMean + " " + eventOnNextBeat);
 
-        meanValuePreviousFrame = AudioSpectrum.SpectrumMeanValue;
+        meanValuePreviousFrame = WasapiBinder.SpectrumMeanValue;
     }
 
     [ContextMenu("Reset Max")]

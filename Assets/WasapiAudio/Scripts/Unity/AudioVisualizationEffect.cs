@@ -7,6 +7,7 @@ using CSCore.CoreAudioAPI;
 using CSCore.SoundIn;
 using CSCore.Streams;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Assets.WasapiAudio.Scripts.Unity
 {
@@ -14,9 +15,11 @@ namespace Assets.WasapiAudio.Scripts.Unity
     {
         private float[] _spectrumData;
         private float _currentLevel = 0.0f;
+        private float _smoothedLevel = 0.0f;
         private float _input = 0.0f;
         private float _clampedInput = 0.0f;
         private float _normalizedInput = 0.0f;
+        private float smoothedMeanLevel = 0.0f;
         
         // Inspector Properties
         public WasapiAudioSource WasapiAudioSource;
@@ -32,17 +35,24 @@ namespace Assets.WasapiAudio.Scripts.Unity
         [SpectrumDataPreview]
         public SpectrumData Preview;
 
+        [FormerlySerializedAs("meanLevelSmoothTime")]
+        [Header("Mean Level Settings")]
+        [SerializeField] private float meanLevelSmoothSharpness = 0.5f;
+        
         [Header("Auto Gain Settings")]
         [SerializeField] private bool autoGain = true;
         [SerializeField] private float dynamicRange = .2f;
         [SerializeField] private float decaySpeed = .2f;
+        [SerializeField] private bool forceSmoothFall = true;
+        [SerializeField] private float smoothFall = 1;
+
+        [Header("Debug")] 
+        [SerializeField] private bool debugDisplay = false;
         
         
         protected bool IsIdle => _spectrumData?.All(v => v < 0.001f) ?? true;
 
         private PeakMeter peakMeter;
-
-        private float _fall = 0;
         
         public float CurrentLevel
         {
@@ -53,9 +63,12 @@ namespace Assets.WasapiAudio.Scripts.Unity
             }
         }
 
+        public float SmoothedLevel => _smoothedLevel;
         public float Input => _input;
         public float ClampedInput => _clampedInput;
         public float NormalizedInput => _normalizedInput;
+
+        public float SmoothedMeanLevel => smoothedMeanLevel;
 
         public float DynamicRange => dynamicRange;
         
@@ -119,6 +132,16 @@ namespace Assets.WasapiAudio.Scripts.Unity
             {
                 _currentLevel = GetLevel();
                 
+                if(_currentLevel > _smoothedLevel)
+                    _smoothedLevel = _currentLevel;
+                else
+                    _smoothedLevel = Mathf.Lerp(_smoothedLevel, _currentLevel, smoothFall * Time.deltaTime);
+                
+                if (forceSmoothFall)
+                {
+                    _currentLevel = _smoothedLevel;
+                }
+                
                 // Slowly return to the noise floor.
                 _input = Mathf.Max(_input - decaySpeed * Time.deltaTime, 0);
                 // Pull up by input with a small headroom.
@@ -126,12 +149,20 @@ namespace Assets.WasapiAudio.Scripts.Unity
                 _input = Mathf.Clamp(_currentLevel + room, _input, 1);
 
                 _clampedInput = Mathf.Clamp(_currentLevel, _input - dynamicRange, _input);
-                
+
                 // ((input - min) * 100) / (max - min)
                 _normalizedInput = (_clampedInput - (_input - dynamicRange)) / (_input - (_input - dynamicRange));
-                
-                Debug.Log("Current: " + _currentLevel + " Clamped: " + _clampedInput + " Normalized: " + _normalizedInput);
             }
+            
+            smoothedMeanLevel = Mathf.Lerp(smoothedMeanLevel, _smoothedLevel, meanLevelSmoothSharpness * Time.deltaTime);
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!debugDisplay)
+                return;
+
+            
         }
     }
 }

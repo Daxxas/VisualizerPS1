@@ -4,6 +4,7 @@ using UnityEngine;
 namespace DefaultNamespace.Editor
 {
     [CustomEditor(typeof(WasapiBinder))]
+    [CanEditMultipleObjects]
     public class WasapiBinderEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
