@@ -14,6 +14,8 @@ namespace Assets.WasapiAudio.Scripts.Unity
     {
         private float[] _spectrumData;
         private float _currentLevel = 0.0f;
+        private float _input = 0.0f;
+        private float _clampedInput = 0.0f;
         private float _normalizedInput = 0.0f;
         
         // Inspector Properties
@@ -34,8 +36,6 @@ namespace Assets.WasapiAudio.Scripts.Unity
         [SerializeField] private bool autoGain = true;
         [SerializeField] private float dynamicRange = .2f;
         [SerializeField] private float decaySpeed = .2f;
-        [SerializeField] private bool smoothFall = true;
-        [SerializeField] private float fallSpeed = 0f;
         
         
         protected bool IsIdle => _spectrumData?.All(v => v < 0.001f) ?? true;
@@ -53,13 +53,13 @@ namespace Assets.WasapiAudio.Scripts.Unity
             }
         }
 
+        public float Input => _input;
+        public float ClampedInput => _clampedInput;
         public float NormalizedInput => _normalizedInput;
 
         public float DynamicRange => dynamicRange;
         
         private float _normalizedLevel = 0.0f;
-        public float NormalizedLevel => _normalizedLevel;
-
         public virtual void Awake()
         {
             if (WasapiAudioSource == null)
@@ -120,29 +120,17 @@ namespace Assets.WasapiAudio.Scripts.Unity
                 _currentLevel = GetLevel();
                 
                 // Slowly return to the noise floor.
-                _normalizedInput = Mathf.Max(_normalizedInput - decaySpeed * Time.deltaTime, 0);
+                _input = Mathf.Max(_input - decaySpeed * Time.deltaTime, 0);
                 // Pull up by input with a small headroom.
                 var room = dynamicRange * 0.05f;
-                _normalizedInput = Mathf.Clamp(_currentLevel + room, _normalizedInput, 1);
+                _input = Mathf.Clamp(_currentLevel + room, _input, 1);
 
-                if (smoothFall)
-                {
-                    _fall += Mathf.Pow(10, 1 + fallSpeed * 2) * Time.deltaTime;
-                    _normalizedInput -= _fall * Time.deltaTime;
+                _clampedInput = Mathf.Clamp(_currentLevel, _input - dynamicRange, _input);
                 
-                    // Pull up by input.
-                    if (_normalizedLevel < _normalizedInput)
-                    {
-                        _normalizedLevel = _normalizedInput;
-                        _fall = 0;
-                    }
-                }
-                else
-                {
-                    _normalizedLevel = _normalizedInput;
-                }
+                // ((input - min) * 100) / (max - min)
+                _normalizedInput = (_clampedInput - (_input - dynamicRange)) / (_input - (_input - dynamicRange));
                 
-                Debug.Log("Current: " + _currentLevel + " Normalized: " + _normalizedInput);
+                Debug.Log("Current: " + _currentLevel + " Clamped: " + _clampedInput + " Normalized: " + _normalizedInput);
             }
         }
     }

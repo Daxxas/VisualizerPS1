@@ -21,26 +21,31 @@ namespace DefaultNamespace.Editor
             var rect = GUILayoutUtility.GetRect(128, 10);
 
             const float kMeterRange = 1;
-            var normalizedLevel  = tracker.NormalizedInput  / kMeterRange;
+            var input  = tracker.Input / kMeterRange;
+            var clampedInput  = tracker.ClampedInput / kMeterRange;
             var currentLevel = tracker.CurrentLevel / kMeterRange;
             var dynamicRange = tracker.DynamicRange / kMeterRange;
+            var normalizedInput = tracker.NormalizedInput / kMeterRange;
 
             // Background
             DrawRect(0, 0, 1, 1, rect, Styles.Background);
 
             // Dynamic range indicator
-            DrawRect(normalizedLevel, 0, normalizedLevel - dynamicRange, 1, rect, Styles.Gray);
+            DrawRect(input, 0, input - dynamicRange, 1, rect, Styles.Gray);
 
             // Amplitude bar
-            var x1 = Mathf.Min(currentLevel, normalizedLevel - dynamicRange);
-            var x2 = Mathf.Min(normalizedLevel, currentLevel);
+            var x1 = Mathf.Min(currentLevel, input - dynamicRange);
+            var x2 = Mathf.Min(input, currentLevel);
             DrawRect( 0, 0,  x1, 1, rect, Styles.Green1); // Lower than floor
             DrawRect(x1, 0,  x2, 1, rect, Styles.Green2); // Inside the range
             DrawRect(x2, 0, currentLevel, 1, rect, Styles.Red); // Higher than nominal
 
             // Output level bar
-            var x3 = normalizedLevel;
+            var x3 = clampedInput;
             DrawRect(x3 - 3 / rect.width, 0, x3, 1, rect, Color.green);
+            
+            var x4 = normalizedInput;
+            DrawRect(x4 - 3 / rect.width, 0, x4, 1, rect, Color.cyan);
 
             // // Label: -60dB
             // var pm60 = new Vector2(rect.xMin + 1, rect.yMax - 8);
