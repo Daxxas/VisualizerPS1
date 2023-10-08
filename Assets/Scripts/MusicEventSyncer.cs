@@ -24,7 +24,6 @@ public class MusicEventSyncer : AudioSyncer
 
     private int currrentCooldown = 0;
     
-    
     ////////////
     private List<int> lastEventsIndex = new List<int>();
     
@@ -43,7 +42,12 @@ public class MusicEventSyncer : AudioSyncer
     {
         maxDeltaMean = 0f;
     }
-    
+
+    private void FixedUpdate()
+    {
+        
+    }
+
     public override void OnBeat()
     {
         base.OnBeat();
