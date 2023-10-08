@@ -22,8 +22,8 @@ public class LensDistorsionController : MonoBehaviour
 
     private void Update()
     {
-        float distorsion = (60f - audioLevelTracker.currentGain) * maxDistorsion / maxGain;
-        // Debug.Log(distorsion + " - " + audioLevelTracker.currentGain);
+        float distorsion = (60f - audioLevelTracker.inputLevel) * maxDistorsion / maxGain; 
+        // Debug.Log(distorsion + " - " + audioLevelTracker.inputLevel);
         lensDistortionUrp.RemapIntensityOne = distorsion;
     }
 }

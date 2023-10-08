@@ -1,15 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using Events;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class MusicEventSyncer : AudioSyncer
 {
-    
-    [SerializeField] private UnityEvent onEvent;
-
     [SerializeField] private float meanTriggerDelta = 20f;
     [SerializeField] private int meanBeat = 4;
+    [SerializeField] private int eventBeatCooldown = 64;
+    [Header("Random Events")]
+    [SerializeField] private List<MusicEvent> musicEvents = new List<MusicEvent>();
+    [SerializeField] private int randomEventHistoryLength = 4;
     
     private bool eventOnNextBeat = false;
 
@@ -19,6 +22,12 @@ public class MusicEventSyncer : AudioSyncer
     
     private float[] lastBeatValue;
 
+    private int currrentCooldown = 0;
+    
+    
+    ////////////
+    private List<int> lastEventsIndex = new List<int>();
+    
     private void Start()
     {
         lastBeatValue = new float[meanBeat];
@@ -27,30 +36,6 @@ public class MusicEventSyncer : AudioSyncer
         {
             lastBeatValue[i] = 0f;
         }
-    }
-
-    public override void Update()
-    {
-        base.Update();
-        
-        // float frameDelta = AudioSpectrum.SpectrumMeanValue - meanValuePreviousFrame;
-        // deltaMean = Mathf.Lerp(deltaMean, frameDelta, Time.deltaTime / meanDeltaSmoothPeriod);
-        //
-        // // calculate max delta mean
-        // if (deltaMean > maxDeltaMean)
-        // {
-        //     maxDeltaMean = deltaMean;
-        // }
-        //
-        // if(deltaMean > meanTriggerDelta)
-        // {
-        //     eventOnNextBeat = true;
-        //     Debug.Log("Event !");
-        // }
-        //
-        // Debug.Log(deltaMean + " > " + meanTriggerDelta + " " + AudioSpectrum.SpectrumMeanValue +  " " + eventOnNextBeat);
-        //
-        // meanValuePreviousFrame = AudioSpectrum.SpectrumMeanValue;
     }
 
     [ContextMenu("Reset Max")]
@@ -62,24 +47,26 @@ public class MusicEventSyncer : AudioSyncer
     public override void OnBeat()
     {
         base.OnBeat();
+        
+        currrentCooldown++;
+        
+        if (currrentCooldown < eventBeatCooldown)
+        {
+            return;
+        }
 
         float beatDelta = Mathf.Abs(AudioSpectrum.SpectrumMeanValue - GetMeanValueOfLastBeats());
         
         if (beatDelta > meanTriggerDelta)
         {
-            Debug.Log("Event!");
-            eventOnNextBeat = true;
-        }
-
-        Debug.Log(beatDelta + " > " + meanTriggerDelta);
-        
-        if (eventOnNextBeat)
-        {
-            onEvent?.Invoke();
+            currrentCooldown = 0;
+            StartRandomEvent();
             Debug.Log("Event !");
             eventOnNextBeat = false;
         }
         
+        
+        // Store last beat values
         for (int i = 0; i < meanBeat - 1; i++)
         {
             lastBeatValue[i] = lastBeatValue[i + 1];
@@ -97,5 +84,28 @@ public class MusicEventSyncer : AudioSyncer
         }
         
         return total/lastBeatValue.Length;
+    }
+    
+    
+    public void StartRandomEvent()
+    {
+        int eventIndex = UnityEngine.Random.Range(0, musicEvents.Count);
+
+        if (musicEvents.Count > randomEventHistoryLength)
+        {
+            while (lastEventsIndex.Contains(eventIndex))
+            {
+                eventIndex = UnityEngine.Random.Range(0, musicEvents.Count);
+            }
+        }
+        
+        lastEventsIndex.Add(eventIndex);
+        
+        if (lastEventsIndex.Count > randomEventHistoryLength)
+        {
+            lastEventsIndex.RemoveAt(0);
+        }
+        
+        musicEvents[eventIndex].StartEvent();
     }
 }

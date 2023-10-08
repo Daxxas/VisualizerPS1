@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SquareKnight
+  m_Controller: {fileID: 9100000, guid: ef24a850b85cc3e469fe81d583ca7e4d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -8797692883229422726, guid: 654a4b45db3de7c488e0488c4e6bfbbb,
+      type: 3}
+    m_OverrideClip: {fileID: -8797692883229422726, guid: 654a4b45db3de7c488e0488c4e6bfbbb,
+      type: 3}
+  - m_OriginalClip: {fileID: -8293906253209576375, guid: 60f99b31b6ea93341af11f9b2b656492,
+      type: 3}
+    m_OverrideClip: {fileID: -8293906253209576375, guid: 60f99b31b6ea93341af11f9b2b656492,
+      type: 3}
