@@ -1,4 +1,4 @@
-Credits for the asset goes to William Chalain and Arthur Devy
+Credits for the asset goes to William Chalain and Arthur Devy  
 Credit for the music goes to Etienne Coelmeck
 
 See it moving here:
